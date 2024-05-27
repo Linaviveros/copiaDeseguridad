@@ -120,10 +120,10 @@ WSGI_APPLICATION = 'miRecordatorio.wsgi.application'
 DATABASES = {
     "default": {
        "ENGINE": "django.db.backends.postgresql",
-       "NAME": "medicamentosalerta.azurewebsites.net",
-       "USER": "awpchszdhb",
-       "PASSWORD": "uAAmF2TjZC$ugKyE",
-        "HOST": "127.0.0.1",
+       "NAME": "recuerdame",
+       "USER": "Recuerdame",
+       "PASSWORD": "lina*2823",
+        "HOST": "recuerdamebd.postgres.database.azure.com",
         "PORT": "5432",
     }
 }

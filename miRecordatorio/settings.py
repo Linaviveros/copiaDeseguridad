@@ -117,18 +117,23 @@ WSGI_APPLICATION = 'miRecordatorio.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
+# DATABASES = {
+#     "default": {
+#        "ENGINE": "django.db.backends.postgresql",
+#        "NAME": "recuerdame",
+#        "USER": "Recuerdame",
+#        "PASSWORD": "lina*2823",
+#         "HOST": "recuerdamebd.postgres.database.azure.com",
+#         "PORT": "5432",
+#     }
+# }
+
 DATABASES = {
     "default": {
-       "ENGINE": "django.db.backends.postgresql",
-       "NAME": "recuerdame",
-       "USER": "Recuerdame",
-       "PASSWORD": "lina*2823",
-        "HOST": "recuerdamebd.postgres.database.azure.com",
-        "PORT": "5432",
+        "ENGINE": "django.db.backends.sqlite3",
+        "NAME": "mydatabase",
     }
 }
-
-
 
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators

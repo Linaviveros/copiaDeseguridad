@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-ex!0%e+pg^mpwed3=yvgy$t864$$a3&67-1@(v3c247xm8^bt9'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'recuerdame.azurewebsites.net']
 
 
 
@@ -118,9 +118,13 @@ WSGI_APPLICATION = 'miRecordatorio.wsgi.application'
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',  # Example for using SQLite
-        'NAME': 'mydatabase',
+    "default": {
+       "ENGINE": "django.db.backends.postgresql",
+       "NAME": "medicamentosalerta.azurewebsites.net",
+       "USER": "awpchszdhb",
+       "PASSWORD": "uAAmF2TjZC$ugKyE",
+        "HOST": "127.0.0.1",
+        "PORT": "5432",
     }
 }
 
